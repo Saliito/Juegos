@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="resources/css/Ahorcado.css">
+    <script type="text/javascript" src="resources/Ahorcado.js"></script>
+    <link rel="shortcut icon" href="resources/Imagenes/gamepad-solid.svg">
+  </head>
+  <body>
+    <header class="menu">
+        <a class="volver" href="./Juego1">volver</a>
+        <h2 class="Nombre">
+            Ahorcado
+        </h2>
+        <nav class="login">
+            <a class="linkLogin" href="./login">Login</a>
+            <div class="fotoPerfil">
+                <img src="" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="main-container">
+        <h1 id="msg-final"></h1>
+        <h3 id="acierto"></h3>
+        <div class="flex-row no-wrap">
+          <h2 class="palabra" id="palabra"></h2>
+          <picture class="imagen">
+            <img src="resources/Imagenes/ahorcado_6.png" alt="" id="image6">
+            <img src="resources/Imagenes/ahorcado_5.png" alt="" id="image5">
+            <img src="resources/Imagenes/ahorcado_4.png" alt="" id="image4">
+            <img src="resources/Imagenes/ahorcado_3.png" alt="" id="image3">
+            <img src="resources/Imagenes/ahorcado_2.png" alt="" id="image2">
+            <img src="resources/Imagenes/ahorcado_1.png" alt="" id="image1">
+            <img src="resources/Imagenes/ahorcado_0.png" alt="" id="image0">
+          </picture>
+        </div>
+        <div class="flex-row" id="turnos">
+          <div class="col">
+            <h3>Intentos restantes: <span id="intentos">6</span></h3>
+          </div>
+          <div class="boton">
+            <div>
+                <button class = "botones" onclick="inicio()" id="reset">Elegir otra palabra</button>
+            </div>
+            <div>
+                <button class = "botones" onclick="pista()" id="pista">Dame una pista!</button>        
+                <span id="hueco-pista"></span>
+            </div>
+          </div>
+          </div>
+        
+        <div class="flex-row">
+            <div class="col">
+                <div class="flex-row" id="abcdario">
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="resources/Ahorcado.js"></script>
+</html>

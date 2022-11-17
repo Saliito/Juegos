@@ -1,0 +1,54 @@
+/*app.post('/auth', async(req, res)=>{
+   const nombre = req.body.usuario;
+   const password = req.body.password;
+   let passwordHaash = await bcryptjs.hash(password, 8);
+   if(user && password){
+    con.query('SELECT * FROM juego WHERE nomvre ?', [nombre], async (error, results)=>{
+        if(results.length == 0 || !(await bcryptjs.compare(password, results[0].password))){
+            console.log('USUARIO O PASSWORDS INCORRECTAS');
+            res.redirect('login');
+        }else{
+            req.session.loggedin = true;
+            console.log('TODO CORRECTO');
+            res.redirect('principal');
+        }
+    });
+   }else{
+        console.log('INGRESE UN USUARIO/CONTRASEÑA');
+        res.render('login');
+   }
+});
+*/
+
+
+/*
+app.get('/', (req, res)=>{
+    if(req.session.loggedin){
+        res.render('principal',{
+            login: true,
+            name: req.session.name
+        });
+    }else{
+        res.render('principal',{
+            login: false,
+            name: 'debe iniciar sesion'
+        });
+    }
+});*/
+
+/*app.post( '/registro', async(req, res)=>{
+    const nombre= req.body.usuario;
+    const contraseña= req.body.password;
+    const mail = req.body.email;
+    const scores = 0;
+    let passwordHaash = await bcryptjs.hash(contraseña, 8);
+    con.query('INSERT INTO juego SET ?',{nombre: nombre, contraseña: password, score1: scores, score2: scores, score3: scores, mail: mail}, async(error, results)=>{
+        if(error){
+            console.log(error);
+            res.redirect('Registro');
+        }else{
+            console.log("Pudo conectar");
+            res.redirect('principal');
+        }
+    });
+});*/

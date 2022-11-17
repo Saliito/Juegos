@@ -1,0 +1,11 @@
+se requiere xamp y mysql (En mi caso use workbench pero puede ser cualquiera)
+
+Para poder usarlo en la terminal hay que poner los siguientes comandos en el siguiente orden
+	npm init -y
+	npm install path
+	npm install express
+	npm install express-session
+	npm install mysql
+	npm install bcryptjs
+	npm install nodemon
+	npx nodemon index.js(nombre del archivo que queremos ejecutar)
